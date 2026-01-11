@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navinz Prabashwara | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Navinz Prabashwara – Frontend Web Developer & UI Designer">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for tiny social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<!-- PAGE LOADER -->
+<div id="loader" class="loader">
+    <div class="loader__spinner"></div>
+</div>
+
+<!-- HEADER / NAV -->
+<header class="header">
+    <nav class="nav container">
+        <a href="#" class="logo">Navinz.</a>
+
+        <ul class="nav__list" id="nav-links">
+            <li><a href="#hero" class="nav__link active">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#services" class="nav__link">Services</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+
+        <div class="header__actions">
+            <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation"><span></span></button>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+        <div class="hero__content container">
+            <h1 class="hero__title">Hi, I'm <span class="accent">Navinz Prabashwara</span></h1>
+            <p class="hero__subtitle">Web Developer | Frontend Developer | UI Designer</p>
+            <div class="hero__buttons">
+                <a href="#contact" class="btn btn--primary">Hire Me</a>
+                <a href="assets/cv.pdf" class="btn btn--outline" download>Download CV</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <a href="#about" aria-label="Scroll down"><i class="fas fa-arrow-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section__title reveal">About Me</h2>
+            <div class="about__grid reveal">
+                <div class="about__image">
+                    <img src="assets/profile.jpg" alt="Navinz Prabashwara">
+                </div>
+                <div class="about__text">
+                    <p>I'm a passionate frontend developer with 5+ years of experience crafting responsive, pixel-perfect websites and web apps. I transform design mock-ups into clean, performant code and love bringing UIs to life with smooth animations.</p>
+                    <ul class="about__highlights">
+                        <li><i class="fas fa-check"></i> 50+ websites delivered</li>
+                        <li><i class="fas fa-check"></i> React / Vue / plain JS</li>
+                        <li><i class="fas fa-check"></i> Mobile-first & SEO friendly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section__title reveal">Skills</h2>
+            <div class="skills__grid reveal">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar"><span data-skill="90"></span></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                    <div class="skill-bar"><span data-skill="88"></span></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar"><span data-skill="85"></span></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar"><span data-skill="80"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section__title reveal">Projects</h2>
+            <div class="projects__grid reveal">
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <img src="assets/project1.jpg" alt="Project 1" class="project-card__img">
+                    <div class="project-card__body">
+                        <h3>E-Commerce UI</h3>
+                        <p>Modern Shopify-like storefront built with vanilla JS, CSS Grid & Flexbox.</p>
+                        <div class="project-card__btns">
+                            <a href="#" target="_blank" class="btn btn--sm">Live Demo</a>
+                            <a href="#" target="_blank" class="btn btn--sm btn--outline">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <img src="assets/project2.jpg" alt="Project 2" class="project-card__img">
+                    <div class="project-card__body">
+                        <h3>Task Manager App</h3>
+                        <p>CRUD task board with drag-drop, localStorage & dark mode.</p>
+                        <div class="project-card__btns">
+                            <a href="#" target="_blank" class="btn btn--sm">Live Demo</a>
+                            <a href="#" target="_blank" class="btn btn--sm btn--outline">Source</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <img src="assets/project3.jpg" alt="Project 3" class="project-card__img">
+                    <div class="project-card__body">
+                        <h3>Portfolio v1</h3>
+                        <p>First iteration of my portfolio – GSAP animations, SSR friendly.</p>
+                        <div class="project-card__btns">
+                            <a href="#" target="_blank" class="btn btn--sm">Live Demo</a>
+                            <a href="#" target="_blank" class="btn btn--sm btn--outline">Source</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section__title reveal">Services</h2>
+            <div class="services__grid reveal">
+                <div class="service">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Web Design</h3>
+                    <p>Pixel-perfect, modern & responsive designs with Figma & Adobe XD.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>React, Vue or plain JS – clean, semantic & accessible code.</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Website Optimization</h3>
+                    <p>Speed, SEO & Core Web Vitals tuned for maximum performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section__title reveal">Contact Me</h2>
+            <div class="contact__wrapper reveal">
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact__form" id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+                <div class="contact__info">
+                    <p><i class="fas fa-envelope"></i> navinz@example.com</p>
+                    <div class="social">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:navinz@example.com" aria-label="Email"><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <p>© <span id="year"></span> Navinz Prabashwara. Crafted with ❤ & vanilla code.</p>
+        <div class="footer__social">
+            <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:navinz@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- SCROLL-TO-TOP -->
+<button id="scrolltop" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
